@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        >
+
+        <Button
+            android:onClick="back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="return"/>
+
+        <EditText
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_toLeftOf="@id/bt_custom_search"
+            android:id="@+id/et_custom_search"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:hint="search"/>
+
+        <Button
+            android:id="@+id/bt_custom_search"
+            android:layout_alignParentRight="true"
+            android:onClick="search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="search"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_custom_alpha"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="alpha"/>
+
+        <TextView
+            android:id="@+id/tv_custom_scale"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="scale"/>
+
+        <TextView
+            android:id="@+id/tv_custom_translate"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="translate"/>
+
+        <TextView
+            android:id="@+id/tv_custom_rotate"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="rotate"/>
+
+        <TextView
+            android:id="@+id/tv_custom_wrapper"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="wrapper"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:onClick="translationX"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="translationX"/>
+
+        <Button
+            android:onClick="viewAnimate"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="view.Animate()"/>
+
+    </LinearLayout>
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/iv_custom_anim"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        android:alpha="1.0"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:onClick="imgAdd"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="add"/>
+        <Button
+            android:onClick="imgRemove"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="remove"/>
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_gravity="center_horizontal"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+        <LinearLayout
+            android:id="@+id/ll_imgs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <com.example.animapplication.view.ObjectAnimatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#2B2B2B"
+        >
+        <com.example.animapplication.view.ObjectAnimatorView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:id="@+id/objectAnimatorView"
+            android:layout_centerInParent="true"/>
+        <Button
+            android:id="@+id/animateBt"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="8dp"
+            android:textSize="16sp"
+            android:text="start"/>
+    </com.example.animapplication.view.ObjectAnimatorLayout>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layoutAnimation xmlns:android="http://schemas.android.com/apk/res/android"
+    android:animation="@anim/zoom_in"
+    android:animationOrder="random"
+    android:delay="0.5">
+
+    <!--android:delay="0.5" 子View动画显示的延迟时间比例-->
+    <!--比如动画执行时间是300ms，延迟比例是0.5，那么延迟时间就是150ms-->
+
+    <!--android:animationOrder="normal" 表示动画执行的顺序类型，共有三种-->
+    <!--normal表示子View按顺序显示，reverse表示子View按逆序显示，random表示子View随机先后显示。-->
+
+</layoutAnimation>

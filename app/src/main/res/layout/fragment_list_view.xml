@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--xml中使用动画-->
+    <!--自定义的动画；android:layoutAnimation="@anim/anim_layout"-->
+    <!--系统默认的过渡动画；android:animateLayoutChanges="true"-->
+    <ListView
+        android:id="@+id/lv_fragment"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#f1f1f1"
+        android:dividerHeight="1dp"
+        android:scrollbars="none">
+
+    </ListView>
+
+</FrameLayout>

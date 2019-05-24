@@ -1,0 +1,33 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="fade" parent="@android:style/Animation">
+        <item name="android:activityOpenEnterAnimation">@anim/custom_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/custom_out</item>
+
+        <!--activityOpenEnterAnimation   // 新Activity进入动画；用于设置打开新的Activity并进入新的Activity展示的动画-->
+        <!--activityOpenExitAnimation    // 旧Activity退出动画；用于设置打开新的Activity并销毁之前的Activity展示的动画-->
+        <!--activityCloseEnterAnimation  // 旧Activity进入动画；用于设置关闭当前Activity进入上一个Activity展示的动画-->
+        <!--activityCloseExitAnimation   // 新Activity退出动画；用于设置关闭当前Activity时展示的动画-->
+    </style>
+
+    <style name="Transparent" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--整个窗口的背景，包括边框和内部-->
+        <item name="android:windowBackground">@color/colorBlack</item>
+        <item name="windowNoTitle">true</item>
+        <!--实现全屏-->
+        <!--<item name="android:windowFullscreen">true</item>-->
+        <!--窗口是否设置为半透明-->
+        <item name="android:windowIsTranslucent">true</item>
+
+        <!--<item name="android:windowAnimationStyle">@style/fade</item>-->
+    </style>
+</resources>
